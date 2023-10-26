@@ -26,8 +26,11 @@ data class Items (
 data class VolumeInfo (
 
     @SerializedName("title"               ) var title               : String?                        = null,
+    @SerializedName("subtitle"            ) var subtitle            : String?                        = null,
     @SerializedName("authors"             ) var authors             : ArrayList<String>              = arrayListOf(),
+    @SerializedName("publisher"           ) var publisher           : String?                        = null,
     @SerializedName("publishedDate"       ) var publishedDate       : String?                        = null,
+    @SerializedName("description"         ) var description         : String?                        = null,
     @SerializedName("industryIdentifiers" ) var industryIdentifiers : ArrayList<IndustryIdentifiers> = arrayListOf(),
     @SerializedName("readingModes"        ) var readingModes        : ReadingModes?                  = ReadingModes(),
     @SerializedName("pageCount"           ) var pageCount           : Int?                           = null,

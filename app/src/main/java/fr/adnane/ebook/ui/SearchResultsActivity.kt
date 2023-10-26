@@ -93,6 +93,7 @@ class SearchResultsActivity : AppCompatActivity() {
         intent.putExtra("author", volume.volumeInfo?.authors?.get(0))
         intent.putExtra("title", volume.volumeInfo?.title)
         intent.putExtra("thumbnail", volume.volumeInfo?.imageLinks?.thumbnail)
+        intent.putExtra("description", volume.volumeInfo?.description)
         startActivity(intent)
     }
 

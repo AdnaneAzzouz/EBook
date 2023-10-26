@@ -23,8 +23,10 @@ class DetailsActivity : AppCompatActivity() {
         val author = intent.extras?.getString("author")
         val title = intent.extras?.getString("title")
         val image = intent.extras?.getString("thumbnail")
+        val description = intent.extras?.getString("description")
         binding.authorDetailsTv.text = author
         binding.titleDetailsTv.text = title
+        binding.descriptionDetailsTv.text = description
         setTitle(title)
         Glide.with(binding.bookDetailsIv.context).load(image)
             .into(binding.bookDetailsIv)
